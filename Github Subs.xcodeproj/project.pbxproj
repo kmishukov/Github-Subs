@@ -13,6 +13,9 @@
 		1DC45F77224F6DE00074E23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC45F76224F6DE00074E23E /* Assets.xcassets */; };
 		1DC45F7A224F6DE00074E23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC45F78224F6DE00074E23E /* LaunchScreen.storyboard */; };
 		1DC45F7D224F6DE00074E23E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F7C224F6DE00074E23E /* main.m */; };
+		1DC45F88224F6F3D0074E23E /* SubscribersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F87224F6F3D0074E23E /* SubscribersTableViewCell.m */; };
+		1DC45F8F224F85480074E23E /* NetworkOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F8E224F85480074E23E /* NetworkOperations.m */; };
+		1DC45F99224F9D150074E23E /* Subscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F98224F9D150074E23E /* Subscriber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		1DC45F79224F6DE00074E23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DC45F7B224F6DE00074E23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DC45F7C224F6DE00074E23E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DC45F86224F6F3D0074E23E /* SubscribersTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscribersTableViewCell.h; sourceTree = "<group>"; };
+		1DC45F87224F6F3D0074E23E /* SubscribersTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscribersTableViewCell.m; sourceTree = "<group>"; };
+		1DC45F8D224F85480074E23E /* NetworkOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkOperations.h; sourceTree = "<group>"; };
+		1DC45F8E224F85480074E23E /* NetworkOperations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkOperations.m; sourceTree = "<group>"; };
+		1DC45F97224F9D150074E23E /* Subscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subscriber.h; sourceTree = "<group>"; };
+		1DC45F98224F9D150074E23E /* Subscriber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subscriber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +69,53 @@
 			children = (
 				1DC45F6D224F6DDE0074E23E /* AppDelegate.h */,
 				1DC45F6E224F6DDE0074E23E /* AppDelegate.m */,
-				1DC45F70224F6DDE0074E23E /* ViewController.h */,
-				1DC45F71224F6DDE0074E23E /* ViewController.m */,
-				1DC45F73224F6DDE0074E23E /* Main.storyboard */,
-				1DC45F76224F6DE00074E23E /* Assets.xcassets */,
-				1DC45F78224F6DE00074E23E /* LaunchScreen.storyboard */,
-				1DC45F7B224F6DE00074E23E /* Info.plist */,
 				1DC45F7C224F6DE00074E23E /* main.m */,
+				1DC45F7B224F6DE00074E23E /* Info.plist */,
+				1DC45F85224F6EC80074E23E /* Models */,
+				1DC45F84224F6EBF0074E23E /* Views */,
+				1DC45F83224F6EB30074E23E /* Controllers */,
+				1DC45F89224F6F630074E23E /* Supporting Files */,
 			);
 			path = "Github Subs";
+			sourceTree = "<group>";
+		};
+		1DC45F83224F6EB30074E23E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DC45F70224F6DDE0074E23E /* ViewController.h */,
+				1DC45F71224F6DDE0074E23E /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1DC45F84224F6EBF0074E23E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DC45F86224F6F3D0074E23E /* SubscribersTableViewCell.h */,
+				1DC45F87224F6F3D0074E23E /* SubscribersTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DC45F85224F6EC80074E23E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DC45F8D224F85480074E23E /* NetworkOperations.h */,
+				1DC45F8E224F85480074E23E /* NetworkOperations.m */,
+				1DC45F97224F9D150074E23E /* Subscriber.h */,
+				1DC45F98224F9D150074E23E /* Subscriber.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DC45F89224F6F630074E23E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DC45F73224F6DDE0074E23E /* Main.storyboard */,
+				1DC45F78224F6DE00074E23E /* LaunchScreen.storyboard */,
+				1DC45F76224F6DE00074E23E /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC45F72224F6DDE0074E23E /* ViewController.m in Sources */,
+				1DC45F8F224F85480074E23E /* NetworkOperations.m in Sources */,
 				1DC45F7D224F6DE00074E23E /* main.m in Sources */,
+				1DC45F99224F9D150074E23E /* Subscriber.m in Sources */,
 				1DC45F6F224F6DDE0074E23E /* AppDelegate.m in Sources */,
+				1DC45F88224F6F3D0074E23E /* SubscribersTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N9MQ3U2TY;
 				INFOPLIST_FILE = "Github Subs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N9MQ3U2TY;
 				INFOPLIST_FILE = "Github Subs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

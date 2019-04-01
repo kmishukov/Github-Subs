@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../Models/NetworkOperations.h"
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController 
+
+@property (nonatomic) NSString *login;
+
+- (id)initWithNewLogin:(NSString*)newLogin;
 
 @end
 
