@@ -16,7 +16,7 @@ typedef enum result { Success, ErrorJSON, ErrorAPI, ErrorNetwork } Result;
 
 @interface NetworkOperations : NSObject
 
--(void)getSubscribersListFor:(NSString*)user completionBlock:(void(^)(id response, Result result))completion;
++(void)getSubscribersListFor:(NSString*)user completionBlock:(void(^)(id response, Result result))completion;
 
 @end
 

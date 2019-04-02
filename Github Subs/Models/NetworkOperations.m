@@ -11,7 +11,7 @@
 
 @implementation NetworkOperations
 
--(void)getSubscribersListFor:(NSString*)user completionBlock:(void(^)(id response, Result result))completion {
++(void)getSubscribersListFor:(NSString*)user completionBlock:(void(^)(id response, Result result))completion {
     NSString *urlAsString = [NSString stringWithFormat: @"https://api.github.com/users/%@/followers", user];
     NSURL *urlpath = [[NSURL alloc] initWithString:urlAsString];
     NSMutableURLRequest *theRequest=[NSMutableURLRequest requestWithURL:urlpath
@@ -23,7 +23,6 @@
     //
     NSLog(@"Accessing URL: %@", urlAsString);
     [[[NSURLSession sharedSession] dataTaskWithRequest: theRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
         if (data!=nil) {
             NSError *err;
             id jsonObject = [NSJSONSerialization JSONObjectWithData: data options:NSJSONReadingAllowFragments error: &err];
@@ -33,17 +32,10 @@
                 completion(err, ErrorJSON);
                 return;
             }
-            
             if ([jsonObject isKindOfClass:[NSArray class]]) {
                 NSMutableArray<Subscriber *> *subsArray = NSMutableArray.new;
                 for (NSDictionary *subDict in jsonObject) {
-                    Subscriber *sub = Subscriber.new;
-                    NSString *login = subDict[@"login"];
-                    sub.login = login;
-                    NSString *imageUrl = subDict[@"avatar_url"];
-                    sub.avatar_url = imageUrl;
-                    NSString *url = subDict[@"url"];
-                    sub.url = url;
+                    Subscriber *sub = [[Subscriber alloc] initWithJson:subDict];
                     [subsArray addObject:sub];
                 }
                 completion(subsArray, Success);

@@ -14,6 +14,9 @@
 
 @property (nonatomic) NSString *login;
 
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray<Subscriber *> *subsArray;
+
 - (id)initWithNewLogin:(NSString*)newLogin;
 
 @end

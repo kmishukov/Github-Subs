@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3D27FF2253529B00B9CD39 /* ViewController+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D27FE2253529B00B9CD39 /* ViewController+TableView.m */; };
+		1D3D280222535CAE00B9CD39 /* ViewController+GetSubscribers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D280122535CAE00B9CD39 /* ViewController+GetSubscribers.m */; };
+		1D3D280522535F3200B9CD39 /* ViewController+ShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D280422535F3200B9CD39 /* ViewController+ShowAlert.m */; };
+		1D3D28082253618700B9CD39 /* NetworkOperations+DownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D28072253618700B9CD39 /* NetworkOperations+DownloadImage.m */; };
+		1D3D280E22536ED600B9CD39 /* NetworkOperations+GetUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D280D22536ED600B9CD39 /* NetworkOperations+GetUserDetails.m */; };
 		1DC45F6F224F6DDE0074E23E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F6E224F6DDE0074E23E /* AppDelegate.m */; };
 		1DC45F72224F6DDE0074E23E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F71224F6DDE0074E23E /* ViewController.m */; };
 		1DC45F75224F6DDE0074E23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC45F73224F6DDE0074E23E /* Main.storyboard */; };
@@ -16,9 +21,30 @@
 		1DC45F88224F6F3D0074E23E /* SubscribersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F87224F6F3D0074E23E /* SubscribersTableViewCell.m */; };
 		1DC45F8F224F85480074E23E /* NetworkOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F8E224F85480074E23E /* NetworkOperations.m */; };
 		1DC45F99224F9D150074E23E /* Subscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC45F98224F9D150074E23E /* Subscriber.m */; };
+		1DDDE18F22537E3400B18EE9 /* SubscribersJSON Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDE18E22537E3400B18EE9 /* SubscribersJSON Parsing.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1DDDE1892253789D00B18EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DC45F62224F6DDE0074E23E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC45F69224F6DDE0074E23E;
+			remoteInfo = "Github Subs";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1D3D27FD2253529B00B9CD39 /* ViewController+TableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+TableView.h"; sourceTree = "<group>"; };
+		1D3D27FE2253529B00B9CD39 /* ViewController+TableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+TableView.m"; sourceTree = "<group>"; };
+		1D3D280022535CAE00B9CD39 /* ViewController+GetSubscribers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+GetSubscribers.h"; sourceTree = "<group>"; };
+		1D3D280122535CAE00B9CD39 /* ViewController+GetSubscribers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+GetSubscribers.m"; sourceTree = "<group>"; };
+		1D3D280322535F3200B9CD39 /* ViewController+ShowAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+ShowAlert.h"; sourceTree = "<group>"; };
+		1D3D280422535F3200B9CD39 /* ViewController+ShowAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+ShowAlert.m"; sourceTree = "<group>"; };
+		1D3D28062253618700B9CD39 /* NetworkOperations+DownloadImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkOperations+DownloadImage.h"; sourceTree = "<group>"; };
+		1D3D28072253618700B9CD39 /* NetworkOperations+DownloadImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkOperations+DownloadImage.m"; sourceTree = "<group>"; };
+		1D3D280C22536ED600B9CD39 /* NetworkOperations+GetUserDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkOperations+GetUserDetails.h"; sourceTree = "<group>"; };
+		1D3D280D22536ED600B9CD39 /* NetworkOperations+GetUserDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkOperations+GetUserDetails.m"; sourceTree = "<group>"; };
 		1DC45F6A224F6DDE0074E23E /* Github Subs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Subs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC45F6D224F6DDE0074E23E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DC45F6E224F6DDE0074E23E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,10 +61,20 @@
 		1DC45F8E224F85480074E23E /* NetworkOperations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkOperations.m; sourceTree = "<group>"; };
 		1DC45F97224F9D150074E23E /* Subscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subscriber.h; sourceTree = "<group>"; };
 		1DC45F98224F9D150074E23E /* Subscriber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subscriber.m; sourceTree = "<group>"; };
+		1DDDE1842253789D00B18EE9 /* Github SubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github SubsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DDDE1882253789D00B18EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DDDE18E22537E3400B18EE9 /* SubscribersJSON Parsing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SubscribersJSON Parsing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1DC45F67224F6DDE0074E23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DDDE1812253789D00B18EE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1DC45F6C224F6DDE0074E23E /* Github Subs */,
+				1DDDE1852253789D00B18EE9 /* Github SubsTests */,
 				1DC45F6B224F6DDE0074E23E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1DC45F6A224F6DDE0074E23E /* Github Subs.app */,
+				1DDDE1842253789D00B18EE9 /* Github SubsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +122,12 @@
 			children = (
 				1DC45F70224F6DDE0074E23E /* ViewController.h */,
 				1DC45F71224F6DDE0074E23E /* ViewController.m */,
+				1D3D27FD2253529B00B9CD39 /* ViewController+TableView.h */,
+				1D3D27FE2253529B00B9CD39 /* ViewController+TableView.m */,
+				1D3D280022535CAE00B9CD39 /* ViewController+GetSubscribers.h */,
+				1D3D280122535CAE00B9CD39 /* ViewController+GetSubscribers.m */,
+				1D3D280322535F3200B9CD39 /* ViewController+ShowAlert.h */,
+				1D3D280422535F3200B9CD39 /* ViewController+ShowAlert.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -100,10 +144,14 @@
 		1DC45F85224F6EC80074E23E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1DC45F8D224F85480074E23E /* NetworkOperations.h */,
-				1DC45F8E224F85480074E23E /* NetworkOperations.m */,
 				1DC45F97224F9D150074E23E /* Subscriber.h */,
 				1DC45F98224F9D150074E23E /* Subscriber.m */,
+				1DC45F8D224F85480074E23E /* NetworkOperations.h */,
+				1DC45F8E224F85480074E23E /* NetworkOperations.m */,
+				1D3D28062253618700B9CD39 /* NetworkOperations+DownloadImage.h */,
+				1D3D28072253618700B9CD39 /* NetworkOperations+DownloadImage.m */,
+				1D3D280C22536ED600B9CD39 /* NetworkOperations+GetUserDetails.h */,
+				1D3D280D22536ED600B9CD39 /* NetworkOperations+GetUserDetails.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,6 +164,15 @@
 				1DC45F76224F6DE00074E23E /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DDDE1852253789D00B18EE9 /* Github SubsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDE18E22537E3400B18EE9 /* SubscribersJSON Parsing.m */,
+				1DDDE1882253789D00B18EE9 /* Info.plist */,
+			);
+			path = "Github SubsTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +195,24 @@
 			productReference = 1DC45F6A224F6DDE0074E23E /* Github Subs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1DDDE1832253789D00B18EE9 /* Github SubsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DDDE18B2253789D00B18EE9 /* Build configuration list for PBXNativeTarget "Github SubsTests" */;
+			buildPhases = (
+				1DDDE1802253789D00B18EE9 /* Sources */,
+				1DDDE1812253789D00B18EE9 /* Frameworks */,
+				1DDDE1822253789D00B18EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DDDE18A2253789D00B18EE9 /* PBXTargetDependency */,
+			);
+			name = "Github SubsTests";
+			productName = "Github SubsTests";
+			productReference = 1DDDE1842253789D00B18EE9 /* Github SubsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +224,10 @@
 				TargetAttributes = {
 					1DC45F69224F6DDE0074E23E = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					1DDDE1832253789D00B18EE9 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 1DC45F69224F6DDE0074E23E;
 					};
 				};
 			};
@@ -166,6 +245,7 @@
 			projectRoot = "";
 			targets = (
 				1DC45F69224F6DDE0074E23E /* Github Subs */,
+				1DDDE1832253789D00B18EE9 /* Github SubsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +261,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DDDE1822253789D00B18EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,13 +278,34 @@
 				1DC45F72224F6DDE0074E23E /* ViewController.m in Sources */,
 				1DC45F8F224F85480074E23E /* NetworkOperations.m in Sources */,
 				1DC45F7D224F6DE00074E23E /* main.m in Sources */,
+				1D3D280E22536ED600B9CD39 /* NetworkOperations+GetUserDetails.m in Sources */,
+				1D3D280222535CAE00B9CD39 /* ViewController+GetSubscribers.m in Sources */,
+				1D3D28082253618700B9CD39 /* NetworkOperations+DownloadImage.m in Sources */,
 				1DC45F99224F9D150074E23E /* Subscriber.m in Sources */,
+				1D3D280522535F3200B9CD39 /* ViewController+ShowAlert.m in Sources */,
 				1DC45F6F224F6DDE0074E23E /* AppDelegate.m in Sources */,
+				1D3D27FF2253529B00B9CD39 /* ViewController+TableView.m in Sources */,
 				1DC45F88224F6F3D0074E23E /* SubscribersTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DDDE1802253789D00B18EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDDE18F22537E3400B18EE9 /* SubscribersJSON Parsing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DDDE18A2253789D00B18EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DC45F69224F6DDE0074E23E /* Github Subs */;
+			targetProxy = 1DDDE1892253789D00B18EE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1DC45F73224F6DDE0074E23E /* Main.storyboard */ = {
@@ -367,6 +475,44 @@
 			};
 			name = Release;
 		};
+		1DDDE18C2253789D00B18EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N9MQ3U2TY;
+				INFOPLIST_FILE = "Github SubsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mycompany.Github-SubsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Github Subs.app/Github Subs";
+			};
+			name = Debug;
+		};
+		1DDDE18D2253789D00B18EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N9MQ3U2TY;
+				INFOPLIST_FILE = "Github SubsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mycompany.Github-SubsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Github Subs.app/Github Subs";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -384,6 +530,15 @@
 			buildConfigurations = (
 				1DC45F81224F6DE00074E23E /* Debug */,
 				1DC45F82224F6DE00074E23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DDDE18B2253789D00B18EE9 /* Build configuration list for PBXNativeTarget "Github SubsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDDE18C2253789D00B18EE9 /* Debug */,
+				1DDDE18D2253789D00B18EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

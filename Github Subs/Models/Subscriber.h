@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSString *company;
 @property (strong,nonatomic) NSString *email;
 
+- (instancetype)initWithJson:(NSDictionary*)SubDict;
+
 @end
 
 NS_ASSUME_NONNULL_END
