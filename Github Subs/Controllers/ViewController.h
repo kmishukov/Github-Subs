@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "../Models/NetworkOperations.h"
-
+#import "../Models/Subscriber.h"
 
 @interface ViewController : UIViewController 
 

@@ -6,8 +6,8 @@
 //  Copyright © 2019 Konstantin Mishukov. All rights reserved.
 //
 
-#import "NetworkOperations.h"
 #import <UIKit/UIKit.h>
+#import "NetworkOperations.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

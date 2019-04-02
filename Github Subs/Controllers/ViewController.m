@@ -9,9 +9,6 @@
 #import "ViewController.h"
 #import "ViewController+TableView.h"
 #import "ViewController+GetSubscribers.h"
-#import "ViewController+ShowAlert.h"
-#import "../Models/Subscriber.h"
-#import "../Views/SubscribersTableViewCell.h"
 
 @interface ViewController ()
 

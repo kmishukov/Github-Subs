@@ -7,7 +7,6 @@
 //
 
 #import "NetworkOperations.h"
-#import "Subscriber.h"
 
 @implementation NetworkOperations
 
